@@ -8,5 +8,5 @@
 - name: Change sample file contents
   lineinfile:
     path: "{{ sample_file_full_path }}"
-    line: "Listen {{ apache_new_port }}"
+    line: "This is sample file created by Ansible"
     insertafter: EOF
