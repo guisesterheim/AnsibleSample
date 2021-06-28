@@ -6,5 +6,5 @@
 - name: Install Apache
   include_tasks: install_apache.yml
 
-- name: Configure Apache
-  include_tasks: config_apache.yml
+- name: Create sample file
+  include_tasks: create_file.yml
