@@ -1,0 +1,7 @@
+---
+
+- name: Print OS
+  include_tasks: print_os_family.yml
+
+- name: Install Apache
+  include_tasks: install_apache.yml
