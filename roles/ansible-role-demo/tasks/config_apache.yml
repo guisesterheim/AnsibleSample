@@ -1,0 +1,8 @@
+---
+
+- name: Change apache port from {{ apache_default_port }} to {{ apache_new_port }}
+  lineinfile:
+    path: "{{ apache_config_file_full_path }}"
+    regex: "^Listen"
+    line: "Listen {{ apache_new_port }}"
+  register: Restart apache
