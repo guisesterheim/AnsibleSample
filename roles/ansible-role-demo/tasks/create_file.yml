@@ -8,5 +8,5 @@
 - name: Change sample file contents
   lineinfile:
     path: "{{ sample_file_full_path }}"
-    line: "This is sample file created by Ansible"
+    line: "This is a sample file created by Ansible"
     insertafter: EOF
