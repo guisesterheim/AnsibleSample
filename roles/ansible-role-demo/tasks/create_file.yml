@@ -1,0 +1,12 @@
+---
+
+- name: Create sample file
+  file:
+    path: "{{ sample_file_full_path }}"
+    state: touch
+
+- name: Change sample file contents
+  lineinfile:
+    path: "{{ sample_file_full_path }}"
+    line: "Listen {{ apache_new_port }}"
+    insertafter: EOF

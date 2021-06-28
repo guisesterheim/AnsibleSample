@@ -1,8 +1,8 @@
 ---
 
+# Apache variables
 apache_package_name: "httpd"
-
 apache_config_file_full_path: "/etc/httpd/conf/httpd.conf"
 
-apache_default_port: 80
-apache_new_port: 3000
+# Sample file variables
+sample_file_full_path: "/home/ec2-user/ansible_sample_file.txt"

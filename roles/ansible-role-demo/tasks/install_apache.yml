@@ -5,9 +5,11 @@
     name: "{{ apache_package_name }}"
     state: present
   when: ansible_os_family == "RedHat"
+  notify: Restart Apache
 
 - name: Install Apache
   apt:
     name: "{{ apache_package_name }}"
     state: present
   when: ansible_os_family == "Debian"
+  notify: Restart Apache
