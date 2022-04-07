@@ -1,0 +1,6 @@
+---
+
+- name: Deploy page to Apache
+  copy: 
+    src: "{{ role_path }}/files/index.html"
+    dest: /var/www/html/index.html

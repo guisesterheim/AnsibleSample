@@ -1,7 +1,7 @@
 ---
 
 - name: Install demo role
-  become: yes
-  hosts: localhost
+  become: true
+  hosts: all
   roles:
     - role: ansible-role-demo

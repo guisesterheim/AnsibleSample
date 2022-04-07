@@ -1,0 +1,13 @@
+---
+
+- name: Print OS
+  include_tasks: print_os_family.yaml
+
+- name: Install Apache
+  include_tasks: install_apache.yaml
+
+- name: Create sample file
+  include_tasks: create_file.yaml
+
+- name: Deploy page
+  include_tasks: deploy_page.yaml
